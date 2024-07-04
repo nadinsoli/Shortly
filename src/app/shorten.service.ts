@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ShortenService {
-  private apiUrl = '/api/api/v1/shorten';
+  private apiUrl = 'https://cleanuri.com/api/v1/shorten';
 
   constructor(private http: HttpClient) { }
 
