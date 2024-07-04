@@ -1,0 +1,58 @@
+.link-container {
+    padding: 55px 160px; 
+    text-align: center;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url('../../assets/images/bg-boost-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.btn {
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    width: 200px; 
+    margin-top: 20px; 
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: hsla(176, 72%, 50%, 0.477); 
+}
+
+
+@media (min-width: 1440px) {
+    .link-container {
+        padding: 55px 200px; 
+    }
+    .btn {
+        margin: 20px auto;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .link-container {
+        padding: 40px 20px; 
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        width: 160px;
+        margin: 20px auto; 
+    }
+}

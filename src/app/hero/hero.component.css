@@ -1,0 +1,95 @@
+.hero-img {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
+  max-width: 50%;
+  height: 100%;
+}
+
+.hero-container {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: hsl(257, 27%, 26%);
+}
+
+p {
+  color: hsl(257, 27%, 26%);
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  padding: 0px 220px;
+  margin-bottom: 100px;
+}
+
+.btn {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 40px;
+  width: 190px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsla(176, 72%, 50%, 0.477); 
+}
+
+@media (max-width: 1440px) {
+  .hero-section {
+      padding: 0px 100px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+      position: static;
+      transform: none;
+      max-width: 100%;
+      margin-top: 20px;
+      right: 0;
+  }
+
+  .hero-section {
+      padding: 0px 60px; 
+  }
+
+  h1 {
+      font-size: 50px;
+  }
+
+  .btn {
+      width: 160px; 
+      padding: 10px 30px; 
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-section {
+      padding: 0px 0px; 
+      margin-bottom: 50px; 
+  }
+
+  h1 {
+      font-size: 40px; 
+      font-weight: 700; 
+  }
+
+  p {
+      font-size: 14px; 
+  }
+
+  .btn {
+      width: 160px; 
+      padding: 10px 30px; 
+  }
+}

@@ -1,0 +1,89 @@
+.form-container {
+  padding: 0px 160px;
+  position: relative;
+  z-index: 2;
+}
+
+form {
+  border-radius: 10px;
+  padding: 40px;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url('src/assets/images/bg-shorten-desktop.svg');
+  width: 1100px;
+  margin-left: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.custom-input {
+  height: 60px;
+  font-size: 18px;
+  border-radius: 10px; 
+  flex: 1;
+  padding-left: 20px; 
+}
+
+.custom-btn {
+  height: 60px;
+  font-size: 20px;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  width: 185px;
+  font-weight: 600;
+  border-radius: 10px; 
+  margin-left: 10px; 
+}
+
+.invalid-feedback {
+  color: red;
+  display: block;
+  margin-top: 5px;
+}
+
+.shortened-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.original-link {
+  font-size: 14px;
+  color: hsl(257, 27%, 26%);
+}
+
+.shortened-link-info {
+  display: flex;
+  align-items: center;
+}
+
+.copy-btn {
+  margin-left: 10px;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+
+.copy-btn:hover {
+  background-color: hsla(176, 72%, 50%, 0.477);
+}
+
+@media (max-width: 768px) {
+  .custom-input,
+  .custom-btn {
+    width: 100%; 
+    border-radius: 10px; 
+
+  .custom-input {
+    border-radius: 10px 10px 0 0; 
+  }
+
+  .custom-btn {
+    border-radius: 0 0 10px 10px; 
+    margin-top: 10px; 
+    margin-left: 0; 
+  }
+}
+}

@@ -1,0 +1,20 @@
+<div class="form-container">
+  <form (ngSubmit)="shortenLink()" class="row align-items-center g-4">
+    <div class="col form-entry">
+      <input type="url" class="form-control custom-input" id="originalLink" name="originalLink" placeholder="Shorten a link here..." [(ngModel)]="originalLink" required>
+    </div>
+    <div class="col-auto form-btn">
+      <button type="submit" class="btn btn-primary custom-btn">Shorten It!</button>
+    </div>
+    <div *ngIf="errorMessage" class="invalid-feedback">
+      {{ errorMessage }}
+    </div>
+  </form>
+
+  <div *ngFor="let link of shortenedLinks">
+    <p>Original: {{ link.original }}</p>
+    <p>Shortened: <a [href]="link.short" target="_blank">{{ link.short }}</a>
+      <button (click)="copyToClipboard(link.short)">Copy</button>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+.nav-container {
+    padding: 30px 160px; 
+}
+
+.nav-link {
+    color: hsl(257, 7%, 63%);
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 8px;
+    transition: color 0.3s ease;
+}
+
+.btn {
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: hsla(176, 72%, 50%, 0.477); 
+}
+
+
+@media (min-width: 1440px) {
+    .nav-container {
+        padding: 30px 200px; 
+    }
+}
+
+
+@media (max-width: 375px) {
+    .nav-container {
+        padding: 20px 20px; 
+    }
+
+    .btn {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+}
