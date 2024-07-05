@@ -15,7 +15,7 @@
 }
 
 .form-entry {
-  flex: 1; /* Take remaining space */
+  flex: 1;
 }
 
 .custom-input {
@@ -41,7 +41,7 @@
   margin-top: 5px;
 }
 
-/* Media queries for responsiveness */
+
 
 @media (max-width: 1024px) {
   .custom-form {
@@ -64,7 +64,7 @@
   .custom-input,
   .custom-btn,
   .invalid-feedback {
-    width: 100%; /* Take full width */
+    width: 100%; 
   }
 }
 
@@ -81,6 +81,6 @@
 
   .custom-input,
   .custom-btn {
-    width: 100%; /* Take full width */
+    width: 100%; 
   }
 }
