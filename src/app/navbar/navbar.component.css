@@ -1,16 +1,18 @@
 .nav-container {
-    padding: 30px 160px; 
-}
-
-.nav-link {
+    margin: 0 auto;
+    max-width: 1150px;
+    padding-top: 10px;
+  }
+  
+  .nav-link {
     color: hsl(257, 7%, 63%);
     font-weight: 500;
     font-size: 15px;
     margin: 5px 8px;
     transition: color 0.3s ease;
-}
-
-.btn {
+  }
+  
+  .btn {
     background-color: hsl(180, 66%, 49%);
     border: none;
     border-radius: 20px;
@@ -18,28 +20,91 @@
     margin-left: 30px;
     font-weight: 500;
     transition: background-color 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus {
+  }
+  
+  .btn:hover,
+  .btn:focus {
     background-color: hsla(176, 72%, 50%, 0.477); 
-}
-
-
-@media (min-width: 1440px) {
-    .nav-container {
-        padding: 30px 200px; 
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:hover,
+  .navbar-toggler:focus {
+    border: none;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: hsl(257, 27%, 26%);
+      border-radius: 20px;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 20px;
+      position: absolute; /* Use absolute positioning */
+      top: 100%; /* Position it below the navbar */
+      left: 0;
+      width: 100%;
+      z-index: 9999; /* Ensure it stays on top */
     }
-}
-
-
-@media (max-width: 375px) {
-    .nav-container {
-        padding: 20px 20px; 
+  
+    .navbar-collapse .nav-link,
+    .navbar-collapse .btn {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
     }
-
-    .btn {
-        margin-left: 0; 
-        margin-top: 10px; 
+  
+    .navbar-collapse .nav-link {
+      display: block;
+      padding: 10px 0;
     }
-}
+  
+    .navbar-collapse .btn {
+      margin: 20px auto;
+      width: 270px;
+      padding: 10px 0;
+    }
+  
+    .navbar-collapse .nav-link {
+      max-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar-collapse hr {
+      border: 0;
+      border-top: 2px solid hsl(257, 7%, 63%);
+      margin: 20px auto;
+      width: 80%;
+    }
+  
+    .d-lg-flex {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      text-align: left;
+      padding: 0;
+      position: static; /* Reset position on larger screens */
+    }
+  
+    .navbar-collapse .nav-link {
+      display: inline-block;
+      padding: 0;
+    }
+  
+    .navbar-collapse .btn {
+      margin: 0;
+    }
+  
+    .d-lg-flex {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  

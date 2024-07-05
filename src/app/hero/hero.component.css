@@ -1,17 +1,16 @@
 .hero-img {
   position: absolute;
-  top: 50%;
-  right: -100px;
+  top: 55%;
+  right: -300px;
   transform: translateY(-50%);
-  max-width: 50%;
+  max-width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .hero-container {
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 100px;
+  margin: 0 auto;
+  max-width: 1150px;
 }
 
 h1 {
@@ -21,13 +20,14 @@ h1 {
 }
 
 p {
-  color: hsl(260, 8%, 14%);
+  color: hsl(257, 7%, 63%);
 }
 
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding: 0px 220px;
+  margin: 0 auto;
+  max-width: 1440px;
   margin-bottom: 100px;
 }
 
@@ -44,39 +44,120 @@ p {
   background-color: hsla(176, 72%, 50%, 0.477); 
 }
 
-@media (max-width: 1440px) {
+/* Media queries for responsiveness */
+
+@media (max-width: 1300px) {
+  .hero-img {
+    right: -250px;
+    max-width: 70%;
+  }
+
   .hero-section {
-      padding: 0px 100px; 
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-img {
+    right: -200px;
+    max-width: 115%;
+  }
+  .hero-section {
+    margin: 0 auto;
+  }
+
+  
+
+  h1 {
+    font-size: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-img {
-      position: static;
-      transform: none;
-      max-width: 100%;
-      margin-top: 20px;
-      right: 0;
+    right: -150px;
+    max-width: 120%;
   }
 
   .hero-section {
-      padding: 0px 60px; 
+    padding: 0px 20px;
   }
 
   h1 {
-      font-size: 50px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .h-btn {
+    justify-content: center;
   }
 
   .btn {
-      width: 160px; 
-      padding: 10px 30px; 
+    width: 200px; 
+    padding: 10px 30px; 
   }
 }
 
+@media (max-width: 500px) {
+  .hero-img {
+    top: 25%;
+    right: -100px;
+    max-width: 135%;
+  }
+
+  .intro {
+    margin-top: 350px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-img {
+    top: 25%;
+    right: -140px;
+    max-width: 130%;
+  }
+
+  .intro {
+    margin-top: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+
+/* 
 @media (max-width: 375px) {
   .hero-section {
-      padding: 0px 0px; 
-      margin-bottom: 50px; 
+      margin: 0 auto;
+  }
+
+  .hero-img {
+    margin: 0 auto;
+    width: 3000px;
   }
 
   h1 {
@@ -92,4 +173,4 @@ p {
       width: 160px; 
       padding: 10px 30px; 
   }
-}
+} */

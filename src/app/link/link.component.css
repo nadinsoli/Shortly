@@ -1,5 +1,5 @@
 .link-container {
-    padding: 55px 160px; 
+    padding: 55px 200px;
     text-align: center;
     background-color: hsl(257, 27%, 26%);
     background-image: url('../../assets/images/bg-boost-desktop.svg');
@@ -7,11 +7,17 @@
     background-repeat: no-repeat;
 }
 
+.l-cont {
+    margin: 0 auto;
+    justify-content: center;
+}
+
 h1 {
     font-size: 40px;
     font-weight: 700;
     color: white;
     padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -22,7 +28,7 @@ h1 {
     font-weight: 700;
     height: 50px;
     width: 200px; 
-    margin-top: 20px; 
+    margin: 0 auto;
     transition: background-color 0.3s ease;
 }
 
@@ -32,9 +38,9 @@ h1 {
 }
 
 
-@media (min-width: 1440px) {
-    .link-container {
-        padding: 55px 200px; 
+@media (max-width: 1440px) {
+    .l-cont {
+        margin: 0 auto;
     }
     .btn {
         margin: 20px auto;
